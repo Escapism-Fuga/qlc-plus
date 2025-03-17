@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Workspace>
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.14.0</Version>
+  <Author>2138683</Author>
+ </Creator>
+ <Engine>
+  <InputOutputMap>
+   <BeatGenerator BeatType="Disabled" BPM="0"/>
+   <Universe Name="Universe 1" ID="0">
+    <Output Plugin="DMX USB" UID="ultraDMX Micro - DMX Output 1 - (S/N: 6A009220)" Line="0">
+     <PluginParameters UniverseChannels="23"/>
+    </Output>
+   </Universe>
+   <Universe Name="Universe 2" ID="1"/>
+   <Universe Name="Universe 3" ID="2"/>
+   <Universe Name="Universe 4" ID="3"/>
+  </InputOutputMap>
+  <Fixture>
+   <Manufacturer>American DJ</Manufacturer>
+   <Model>5P Hex</Model>
+   <Mode>6 Channel</Mode>
+   <ID>0</ID>
+   <Name>5P Hex</Name>
+   <Universe>0</Universe>
+   <Address>4</Address>
+   <Channels>6</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>American DJ</Manufacturer>
+   <Model>5P Hex</Model>
+   <Mode>6 Channel</Mode>
+   <ID>1</ID>
+   <Name>5P Hex</Name>
+   <Universe>0</Universe>
+   <Address>17</Address>
+   <Channels>6</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>American DJ</Manufacturer>
+   <Model>5P Hex</Model>
+   <Mode>6 Channel</Mode>
+   <ID>2</ID>
+   <Name>5P Hex</Name>
+   <Universe>0</Universe>
+   <Address>10</Address>
+   <Channels>6</Channels>
+  </Fixture>
+  <Function ID="0" Type="Scene" Name="New Scene 0">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0,5,0</FixtureVal>
+   <FixtureVal ID="1"/>
+   <FixtureVal ID="2">0,255,1,0,2,0,3,255,4,0,5,0</FixtureVal>
+  </Function>
+  <Function ID="1" Type="Chaser" Name="New Chaser 1">
+   <Speed FadeIn="1000" FadeOut="1000" Duration="6000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="1000" FadeOut="0">4</Step>
+   <Step Number="1" FadeIn="1" Hold="1000" FadeOut="1">0</Step>
+  </Function>
+  <Function ID="2" Type="Scene" Name="New Scene 2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,255,1,0,2,255,3,0,4,0,5,0</FixtureVal>
+   <FixtureVal ID="1">0,18,1,255,2,0,3,0,4,255,5,0</FixtureVal>
+   <FixtureVal ID="2"/>
+  </Function>
+  <Function ID="3" Type="Scene" Name="New Scene 3">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0"/>
+   <FixtureVal ID="1">0,0,1,255,2,0,3,255,4,0,5,0</FixtureVal>
+   <FixtureVal ID="2"/>
+  </Function>
+  <Function ID="4" Type="Scene" Name="New Scene 4">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0"/>
+   <FixtureVal ID="1"/>
+   <FixtureVal ID="2">0,255,1,0,2,255,3,0,4,0,5,0</FixtureVal>
+  </Function>
+  <Function ID="5" Type="Chaser" Name="New Chaser 5">
+   <Speed FadeIn="1000" FadeOut="1000" Duration="6000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">3</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">2</Step>
+  </Function>
+ </Engine>
+ <VirtualConsole>
+  <Frame Caption="">
+   <Appearance>
+    <FrameStyle>None</FrameStyle>
+    <ForegroundColor>Default</ForegroundColor>
+    <BackgroundColor>Default</BackgroundColor>
+    <BackgroundImage>None</BackgroundImage>
+    <Font>Default</Font>
+   </Appearance>
+   <Slider Caption="Slider 0" ID="0" WidgetStyle="Slider" InvertedAppearance="false">
+    <WindowState Visible="True" X="235" Y="125" Width="60" Height="200"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
+    <Level LowLimit="0" HighLimit="255" Value="0"/>
+    <Playback>
+     <Function>1</Function>
+    </Playback>
+   </Slider>
+   <Slider Caption="Slider 1" ID="1" WidgetStyle="Slider" InvertedAppearance="false">
+    <WindowState Visible="True" X="295" Y="125" Width="60" Height="200"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
+    <Level LowLimit="0" HighLimit="255" Value="0"/>
+    <Playback>
+     <Function>5</Function>
+    </Playback>
+   </Slider>
+   <Button Caption="New Chaser 1" ID="29" Icon="">
+    <WindowState Visible="True" X="555" Y="205" Width="50" Height="50"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="1"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <Button Caption="New Chaser 5" ID="30" Icon="">
+    <WindowState Visible="True" X="610" Y="205" Width="50" Height="50"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="5"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <Button Caption="Button 31" ID="31" Icon="">
+    <WindowState Visible="True" X="605" Y="330" Width="50" Height="50"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="4294967295"/>
+    <Action>StopAll</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+  </Frame>
+  <Properties>
+   <Size Width="1920" Height="1080"/>
+   <GrandMaster ChannelMode="Intensity" ValueMode="Reduce" SliderMode="Normal"/>
+  </Properties>
+ </VirtualConsole>
+ <SimpleDesk>
+  <Engine/>
+ </SimpleDesk>
+</Workspace>
